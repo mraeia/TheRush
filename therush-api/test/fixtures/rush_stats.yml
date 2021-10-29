@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  team_name: MyString
+  position: MyString
+  rushing_attempts_per_game_average: 1.5
+  rushing_attempts: 1
+  total_rushing_yards: 1
+  rushing_average_yards_per_attempt: 1.5
+  rushing_yards_per_game: 1.5
+  total_rushing_touchdowns: 1
+  longest_rush: MyString
+  rushing_first_downs: 1
+  rushing_first_downs: 1
+  rushing_first_down_percentage: 1.5
+  rushing_20_plus_yards_each: 1
+  rushing_40_plus_yards_each: 1
+  rushing_fumbles: 1
+
+two:
+  name: MyString
+  team_name: MyString
+  position: MyString
+  rushing_attempts_per_game_average: 1.5
+  rushing_attempts: 1
+  total_rushing_yards: 1
+  rushing_average_yards_per_attempt: 1.5
+  rushing_yards_per_game: 1.5
+  total_rushing_touchdowns: 1
+  longest_rush: MyString
+  rushing_first_downs: 1
+  rushing_first_downs: 1
+  rushing_first_down_percentage: 1.5
+  rushing_20_plus_yards_each: 1
+  rushing_40_plus_yards_each: 1
+  rushing_fumbles: 1

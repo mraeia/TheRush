@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  flex-flow: column;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fbfbfd;
+
+  .header {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .body {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 30px;
+
+    .filtersDownloadContainer {
+      display: flex;
+
+      .nameInput {
+        margin-right: 10px;
+      }
+
+      .perPageSelect {
+        margin-right: 10px;
+      }
+
+      .download {
+        button {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .table {
+      width: 100%;
+      padding: 14px 19px;
+      box-sizing: border-box;
+      background: white;
+      border-radius: 6px;
+      border: 1px solid #d6dce8;
+    }
+
+    .loader {
+      border: 5px solid black;
+      border-radius: 50%;
+      border-top: 5px solid transparent;
+      width: 60px;
+      height: 60px;
+      margin-top: 30px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .paginationContainer {
+      .pagination {
+        list-style-type: none;
+        padding-inline-start: 0px;
+        display: flex;
+        background: white;
+        border-radius: 4px;
+        border: 1px solid #d6dce8;
+
+        .page,
+        .break {
+          border-left: 1px solid #d6dce8;
+        }
+
+        .anchor {
+          display: block;
+          padding: 6px;
+        }
+
+        .previous,
+        .next,
+        .break,
+        .page {
+          cursor: pointer;
+
+          &.active,
+          &:hover {
+            background: #e2eef1;
+          }
+        }
+
+        li:nth-last-child(2) {
+          border-right: 1px solid #d6dce8;
+        }
+      }
+    }
+  }
+}
